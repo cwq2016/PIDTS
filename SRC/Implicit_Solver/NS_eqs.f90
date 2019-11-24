@@ -47,8 +47,8 @@ INTEGER :: step
 !=================================================================================================================================
 
 ! Compute pseudo time 
-uMax=MAXVAL(Uone(:,:,2))
-vMax=MAXVAL(Uone(:,:,3))
+uMax=MAXVAL(ABS(Uone(:,:,2)))
+vMax=MAXVAL(ABS(Uone(:,:,3)))
 LA=(ABS(uMax)+SQRT(uMax**2+BetaP))/hx+1/(1./Kappa(2)*hx**2)
 LB=(ABS(vMax)+SQRT(vMax**2+BetaP))/hy+1/(1./Kappa(2)*hy**2)
 Tao=CFL/(LA+LB)
@@ -62,9 +62,8 @@ DO step=1,4
 		Mid(1:Nx-1,1:Ny-1,n)=Uone(1:Nx-1,1:Ny-1,n)+alpha(step)*Tao*Resi(1:Nx-1,1:Ny-1,n)
 	ENDDO
 	CALL BC_ADJ
-	Uone=Mid
 ENDDO
-
+Uone=Mid
 
 END SUBROUTINE
     
