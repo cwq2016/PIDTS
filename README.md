@@ -7,7 +7,7 @@ A user-defined wrapper of implicit iterative solver is required to integrate wit
 This is a scientific project. If you use PIDTS for publications or presentations in science, please support the project by citing our publications given in [references](REFERENCE.md). In case you have question regarding PIDTS, don't hesitate to contact us <wenqianchen2016@gmail.com>.
 
 # Installation
-The example code is compiled with gfortran 5.4, and has been tested for Centos 7 and Ubuntu 16.  In addition, two external libraries, namely MPI and MKL are used in PIDTS.
+The example code is compiled with gfortran 5.4, and has been tested for Centos 7 and Ubuntu 16.  In addition, the external librarie, namely MPI is used in PIDTS.
 ## Compiling the code
 * Open a terminal 
 * Change into the PIDTS directory
