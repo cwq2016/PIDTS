@@ -54,8 +54,8 @@ NCases=0
 
 # test cases
 logRAseq=(3 4 5 6)
-npseq=(1 4 8 12 16 20)
-nptseq=(1 4 16 32 64 128)
+npseq=(1 4 8 12)
+nptseq=(1 4 16 32)
 Amplitude=0.8
 Periodseq=10
 DTseq=0.1
